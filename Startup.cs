@@ -42,6 +42,8 @@ namespace SportAPISever
             options.UseSqlServer(Configuration.GetConnectionString("Devcon")));
 
             services.AddScoped<ISportType, SportTypeDataManager>();
+            services.AddScoped<ICountry, CountryDataManager>();
+            services.AddScoped<ITournament, TournamentDataManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
