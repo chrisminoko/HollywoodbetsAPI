@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using SportAPISever.Model;
+using SportAPISever.Model.View_Models;
 
 namespace SportAPISever.Context
 {
@@ -26,6 +27,7 @@ namespace SportAPISever.Context
         public virtual DbSet<SportTypes> SportTypes { get; set; }
         public virtual DbSet<Tournament> Tournament { get; set; }
         public virtual DbSet<TournamentBeTypes> TournamentBeTypes { get; set; }
+        public virtual DbSet<BetEventsDetails> EventsDetails { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using SportAPISever.Model.View_Models;
 
 namespace SportAPISever.Data_Manager
 {
@@ -36,6 +37,20 @@ namespace SportAPISever.Data_Manager
             throw new NotImplementedException();
         }
 
+        public IEnumerable<BetEventsDetails> GetBetEvents(int? TournamentId)
+        {
+            try
+            {
+                string storProc = $"[dbo].[GetEvenDetails]@TournamentID={TournamentId}";
+                return RunStorePro(storProc);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public IEnumerable<Events> GetTournamentEventsByID(int ? TournamentId)
         {
             try
@@ -50,6 +65,11 @@ namespace SportAPISever.Data_Manager
             }
         }
 
+        public IEnumerable<BetEventsDetails> RunStorePro(string StoreProcedure)
+        {
+            return _hollywoodbetsDBContext.EventsDetails.FromSqlRaw(StoreProcedure);
+        }
+
         public IQueryable<Events> RunStoreProced(string StoreProcedure)
         {
             return _hollywoodbetsDBContext.Events.FromSqlRaw(StoreProcedure);
@@ -59,5 +79,7 @@ namespace SportAPISever.Data_Manager
         {
             throw new NotImplementedException();
         }
+
+   
     }
 }
