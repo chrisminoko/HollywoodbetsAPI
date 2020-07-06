@@ -20,19 +20,14 @@ namespace SportAPISever.Controllers
             _events = events;
         }
 
-        //[HttpGet]
-        //public IActionResult GetEventsByTournamentID(int? TournamentID) 
-        //{
-        //    var Tournaments = _events.GetTournamentEventsByID(TournamentID);
-        //    return Ok(Tournaments);
-        //}
-
-
         [HttpGet]
-        public IActionResult GetBetEvents(int? tournamentID)
+        public IActionResult GetEventsByTournamentID(int? TournamentID)
         {
-            var Tournaments = _events.GetBetEvents(tournamentID);
+            var Tournaments = _events.GetTournamentEventsByID(TournamentID);
             return Ok(Tournaments);
         }
+
+
+
     }
 }
