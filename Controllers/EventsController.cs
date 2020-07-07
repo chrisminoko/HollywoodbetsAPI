@@ -29,5 +29,14 @@ namespace SportAPISever.Controllers
 
 
 
+
+        //[HttpGet]
+        //public IActionResult GetEventsByTournamentID(int? TournamentID)
+        //{
+        //    var Tournaments = _events.GetBetEvents(TournamentID);
+        //    return Ok(Tournaments);
+        //}
+
+
     }
 }

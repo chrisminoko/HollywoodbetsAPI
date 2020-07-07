@@ -41,8 +41,9 @@ namespace SportAPISever.Data_Manager
         {
             try
             {
-                string storProc = $"[dbo].[GetEvenDetails]@TournamentID={TournamentId}";
-                return RunStorePro(storProc);
+
+                return null;
+
             }
             catch (Exception)
             {
@@ -67,7 +68,8 @@ namespace SportAPISever.Data_Manager
 
         public IEnumerable<BetEventsDetails> RunStorePro(string StoreProcedure)
         {
-            return _hollywoodbetsDBContext.EventsDetails.FromSqlRaw(StoreProcedure);
+          
+            throw new NotImplementedException();
         }
 
         public IQueryable<Events> RunStoreProced(string StoreProcedure)
