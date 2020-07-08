@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using SportAPISever.Contracts;
 
 namespace SportAPISever.Controllers
@@ -15,15 +16,18 @@ namespace SportAPISever.Controllers
     public class BetTypesController : ControllerBase
     {
         private readonly IBetType _betType;
-        public BetTypesController(IBetType betType)
+        private readonly ILogger<BetTypesController> _logger;
+        public BetTypesController(IBetType betType ,ILogger<BetTypesController> logger)
         {
             _betType = betType;
+            _logger = logger;
         }
 
         [HttpGet]
         public IActionResult GetTournamentBetTypes(int ? tournamentID)
         {
             var bettypes = _betType.GetEventTournament(tournamentID);
+            _logger.LogInformation("Get TournamentBetypes : ");
             return Ok(bettypes);
         }
     }
