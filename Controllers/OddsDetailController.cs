@@ -10,17 +10,17 @@ namespace SportAPISever.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EventMarketController : ControllerBase
+    public class OddsDetailController : ControllerBase
     {
-        private readonly IEventMarket _eventMarket;
-        public EventMarketController(IEventMarket eventMarket)
+        private readonly IOddsDetails _oddsDetails;
+        public OddsDetailController(IOddsDetails oddsDetails)
         {
-            _eventMarket = eventMarket;
+            _oddsDetails = oddsDetails;
         }
 
-        public IActionResult GetEvent(int ? tournamentID) 
+        public IActionResult GetOdds(int? tournamentID) 
         {
-            var results = _eventMarket.GetEventsDetails(tournamentID);
+            var results= _oddsDetails.GetOddsDetails(tournamentID);
             return Ok(results);
         }
     }

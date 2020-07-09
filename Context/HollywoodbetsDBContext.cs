@@ -28,6 +28,7 @@ namespace SportAPISever.Context
         public virtual DbSet<Tournament> Tournament { get; set; }
         public virtual DbSet<TournamentBeTypes> TournamentBeTypes { get; set; }
         public virtual DbSet<BetEventsDetails> EventsDetails { get; set; }
+        public virtual DbSet<OddsDetails> OddsDetails { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{

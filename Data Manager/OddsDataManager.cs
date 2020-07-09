@@ -9,41 +9,40 @@ using System.Threading.Tasks;
 
 namespace SportAPISever.Data_Manager
 {
-    public class EventMarketType:IEventMarket
+    public class OddsDataManager: IOddsDetails
     {
-
         private readonly HollywoodbetsDBContext _hollywoodbetsDBContext;
-        public EventMarketType(HollywoodbetsDBContext hollywoodbetsDBContext)
+        public OddsDataManager(HollywoodbetsDBContext hollywoodbetsDBContext)
         {
             _hollywoodbetsDBContext = hollywoodbetsDBContext;
         }
 
-        public void Add(BetEventsDetails entity)
+        public void Add(OddsDetails entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(BetEventsDetails entity)
+        public void Delete(OddsDetails entity)
         {
             throw new NotImplementedException();
         }
 
-        public BetEventsDetails Get(int id)
+        public OddsDetails Get(int id)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<BetEventsDetails> GetAll()
+        public IEnumerable<OddsDetails> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public IQueryable<BetEventsDetails> GetEventsDetails(int? tournamentID)
+        public IQueryable<OddsDetails> GetOddsDetails(int? tournamentID)
         {
 
             try
             {
-                string proc = $"[dbo].[EventMarkets]@tournamentID={tournamentID}";
+                string proc = $"[dbo].[OddsBasedOnTournament]@TournamentID={tournamentID}";
                 return RunStoreProced(proc);
             }
             catch (Exception)
@@ -51,17 +50,14 @@ namespace SportAPISever.Data_Manager
 
                 throw;
             }
-
-
         }
 
-
-        public IQueryable<BetEventsDetails> RunStoreProced(string StoreProcedure)
+        public IQueryable<OddsDetails> RunStoreProced(string StoreProcedure)
         {
-            return _hollywoodbetsDBContext.EventsDetails.FromSqlRaw(StoreProcedure);
+            return _hollywoodbetsDBContext.OddsDetails.FromSqlRaw(StoreProcedure);
         }
 
-        public void Update(BetEventsDetails entity)
+        public void Update(OddsDetails entity)
         {
             throw new NotImplementedException();
         }

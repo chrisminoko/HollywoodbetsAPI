@@ -6,18 +6,15 @@ using System.Threading.Tasks;
 
 namespace SportAPISever.Model.View_Models
 {
-    public class BetEventsDetails
+    public class OddsDetails
     {
         [Key]
-      
-        public int TournamentID { get; set; }
+        public int OddsId { get; set; }
+        public int TournamentId { get; set; }
+        public int MarketID { get; set; }
         public int EventId { get; set; }
-        public int BetTypeID { get; set; }
-        public int MarketId { get; set; }
+        public decimal ODDS { get; set; }
         public string MarkeType { get; set; }
-        public decimal Odds { get; set; }
-      
-
-
+        public int TournamentBetypeID { get; set; }
     }
 }

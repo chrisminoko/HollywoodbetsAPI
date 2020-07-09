@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace SportAPISever.Contracts
 {
-    public interface IEventMarket :IRepositoryBase<BetEventsDetails>
+   public interface IOddsDetails : IRepositoryBase<OddsDetails>
     {
-        IQueryable<BetEventsDetails> GetEventsDetails(int? tournamentID);
+        IQueryable<OddsDetails> GetOddsDetails(int? tournamentID);
     }
 }

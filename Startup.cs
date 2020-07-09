@@ -49,6 +49,7 @@ namespace SportAPISever
             services.AddScoped<IBetType, BetTypeDataManager>();
             services.AddScoped<IMarket, MarketDataManager>();
             services.AddScoped<IEventMarket, EventMarketType>();
+            services.AddScoped<IOddsDetails, OddsDataManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
