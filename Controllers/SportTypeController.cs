@@ -73,7 +73,7 @@ namespace SportAPISever.Controllers
                     _logger.LogError("Sport type owner object sent from client.");
                     return BadRequest("Invalid model object");
                 }
-
+                _sportType.Add(sportTypes);
                 return Ok();
             }
             catch (Exception ex)

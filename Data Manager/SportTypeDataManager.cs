@@ -22,7 +22,7 @@ namespace SportAPISever.Data_Manager
 
             using (var connection = DbService.sqlConnection()) 
             {
-                var result = connection.Execute($"EXECUTE dbo.AddtSportTypes{entity.Name},{entity.Imageurl}");
+                var result = connection.Execute($"EXECUTE dbo.AddSportType{entity.Name},{entity.Imageurl}");
             }
             
         }
@@ -58,7 +58,7 @@ namespace SportAPISever.Data_Manager
         {
             try
             {
-                DeleteSportTree(1);
+                //DeleteSportTree(1);
 
                 using (var connection = DbService.sqlConnection()) 
                 {
