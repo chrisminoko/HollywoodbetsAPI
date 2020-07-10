@@ -14,6 +14,7 @@ namespace SportAPISever.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [EnableCors("MyPolicy")]
+
     public class SportTypeController : ControllerBase
     {
         private readonly ISportType _sportType;
@@ -25,12 +26,66 @@ namespace SportAPISever.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll() 
+        public IActionResult GetAll()
         {
             var GetAllSportTypes = _sportType.GetAll();
             _logger.LogInformation("Get Call for Sport Types :");
             return Ok(GetAllSportTypes);
-          
+        }
+
+        [HttpPost]
+        public IActionResult AddSportType(SportTypes sportTypes)
+        {
+
+            try
+            {
+                if (sportTypes == null)
+                {
+                    _logger.LogError("Sport type object sent from client is null.");
+                    return BadRequest("Sport type object is null");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogError("Sport type owner object sent from client.");
+                    return BadRequest("Invalid model object");
+                }
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside AddSportType action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateSportType(Guid id, [FromBody]SportTypes sportTypes)
+        {
+            try
+            {
+                if (sportTypes == null)
+                {
+                    _logger.LogError("Sport type object sent from client is null.");
+                    return BadRequest("Sport type object is null");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogError("Sport type owner object sent from client.");
+                    return BadRequest("Invalid model object");
+                }
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside AddSportType action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+
         }
     }
 }

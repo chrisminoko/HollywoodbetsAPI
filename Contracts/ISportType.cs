@@ -9,6 +9,6 @@ namespace SportAPISever.Contracts
 {
     public interface ISportType: IRepositoryBase<SportTypes>
     {
-
+        bool DeleteSportTree(int? id);
     }
 }

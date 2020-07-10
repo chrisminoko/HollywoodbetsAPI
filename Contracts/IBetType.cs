@@ -10,5 +10,7 @@ namespace SportAPISever.Contracts
     public interface IBetType :IRepositoryBase<BetTypes>
     {
         IEnumerable<BetTypes> GetEventTournament(int? TournamentId);
+      
     }
+
 }

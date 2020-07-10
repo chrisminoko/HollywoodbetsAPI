@@ -15,8 +15,10 @@ using SportAPISever.Model;
 using SportAPISever.Context;
 using SportAPISever.Contracts;
 using SportAPISever.Data_Manager;
-
-
+using Swashbuckle.AspNetCore;
+using System.Reflection;
+using System.IO;
+using Microsoft.OpenApi.Models;
 namespace SportAPISever
 {
     public class Startup
@@ -50,15 +52,34 @@ namespace SportAPISever
             services.AddScoped<IMarket, MarketDataManager>();
             services.AddScoped<IEventMarket, EventMarketType>();
             services.AddScoped<IOddsDetails, OddsDataManager>();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "ToDo API",
+                    Description = "A simple example ASP.NET Core Web API",
+                });
+            });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
 
             app.UseRouting();
 

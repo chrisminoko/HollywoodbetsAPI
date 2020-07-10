@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Dapper;
 
 namespace SportAPISever.Data_Manager
 {
@@ -18,12 +19,23 @@ namespace SportAPISever.Data_Manager
         }
         public void Add(SportTypes entity)
         {
-            throw new NotImplementedException();
+            _hollywoodbetsDBContext.Add(entity);
+            _hollywoodbetsDBContext.SaveChanges();
         }
 
         public void Delete(SportTypes entity)
         {
             throw new NotImplementedException();
+        }
+
+        public bool DeleteSportTree(int? id)
+        {
+            using (var connection = DbService.sqlConnection())
+            {
+                var parameter = new { Id = id };
+                var affectedRows = connection.Execute("DELETE sportTypes WHERE sportId =@Id",parameter);
+                return affectedRows > 0;
+            }
         }
 
         public SportTypes Get(int id)
@@ -39,13 +51,19 @@ namespace SportAPISever.Data_Manager
         {
             try
             {
-                string proc = "[dbo].[GetSportTypes]";
-                return RunStoreProced(proc);
+                DeleteSportTree(1);
+
+                using (var connection = DbService.sqlConnection()) 
+                {
+                    var result = connection.Query<SportTypes>("Execute GetSportTypes");
+                    return result;
+                
+                }
             }
-            catch (Exception )
+            catch (Exception ex )
             {
 
-                throw;
+                throw ex;
             }
         }
 
