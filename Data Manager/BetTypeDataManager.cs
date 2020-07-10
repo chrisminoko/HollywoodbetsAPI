@@ -27,7 +27,7 @@ namespace SportAPISever.Data_Manager
             throw new NotImplementedException();
         }
 
-        public BetTypes Get(int id)
+        public BetTypes Get(int? id)
         {
             throw new NotImplementedException();
         }

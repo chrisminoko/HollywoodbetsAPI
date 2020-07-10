@@ -26,11 +26,34 @@ namespace SportAPISever.Controllers
         }
 
         [HttpGet]
+
         public IActionResult GetAll()
         {
             var GetAllSportTypes = _sportType.GetAll();
             _logger.LogInformation("Get Call for Sport Types :");
             return Ok(GetAllSportTypes);
+        }
+
+        [HttpGet]
+        [Route("Get")]
+        public IActionResult Get(int? id)
+        {
+            var results = _sportType.Get(id);
+            try
+            {
+                if (results == null)
+                {
+                    _logger.LogError("There is no matching sports with the specified Id");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                _logger.LogError($"Something went wrong inside AddSportType action: {ex.Message}");
+                return BadRequest("Invalid model object");
+            }
+
+            return Ok(results);
         }
 
         [HttpPost]
@@ -61,8 +84,8 @@ namespace SportAPISever.Controllers
 
         }
 
-        [HttpPut("{id}")]
-        public IActionResult UpdateSportType(Guid id, [FromBody]SportTypes sportTypes)
+        [HttpPut]
+        public IActionResult UpdateSportType([FromBody]SportTypes sportTypes)
         {
             try
             {
@@ -78,6 +101,7 @@ namespace SportAPISever.Controllers
                     return BadRequest("Invalid model object");
                 }
 
+                _sportType.Update(sportTypes);
                 return Ok();
             }
             catch (Exception ex)
@@ -86,6 +110,30 @@ namespace SportAPISever.Controllers
                 return StatusCode(500, "Internal server error");
             }
 
+        }
+
+        [HttpDelete("{id}")]
+
+        public IActionResult DeleteSportType(int id) 
+        {
+            try
+            {
+                var sport = _sportType.Get(id);
+                if (sport==null)
+                {
+                    _logger.LogError($"Sport with id :{id},hasn't been found in db");
+                    return NotFound();
+                }
+                _sportType.DeleteSportTree(id);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+
+                _logger.LogError($"Something went wrong inside DeleteSportType action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        
         }
     }
 }

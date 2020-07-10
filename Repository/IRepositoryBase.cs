@@ -8,7 +8,7 @@ namespace SportAPISever.Repository
     public interface IRepositoryBase<TEntity>
     {
         IEnumerable<TEntity> GetAll();
-        TEntity Get(int id);
+        TEntity Get(int? id);
         void Add(TEntity entity);
         void Update(TEntity entity);
         void Delete(TEntity entity);

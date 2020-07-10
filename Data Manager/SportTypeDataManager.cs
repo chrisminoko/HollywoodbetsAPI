@@ -19,8 +19,12 @@ namespace SportAPISever.Data_Manager
         }
         public void Add(SportTypes entity)
         {
-            _hollywoodbetsDBContext.Add(entity);
-            _hollywoodbetsDBContext.SaveChanges();
+
+            using (var connection = DbService.sqlConnection()) 
+            {
+                var result = connection.Execute($"EXECUTE dbo.AddtSportTypes{entity.Name},{entity.Imageurl}");
+            }
+            
         }
 
         public void Delete(SportTypes entity)
@@ -38,13 +42,16 @@ namespace SportAPISever.Data_Manager
             }
         }
 
-        public SportTypes Get(int id)
+        public  SportTypes Get(int? id)
         {
-            var SportTypes = _hollywoodbetsDBContext.SportTypes.
-                SingleOrDefault(x => x.SportId == id);
-
-            return SportTypes;
-
+         
+            var sql = "SELECT * FROM sportTypes WHERE  sportId =@Id";
+            using (var connection = DbService.sqlConnection())
+            {
+                connection.Open();
+                var result = connection.Query<SportTypes>(sql, new { Id = id });
+                return result.FirstOrDefault();
+            }
         }
 
         public IEnumerable<SportTypes> GetAll()
@@ -57,24 +64,25 @@ namespace SportAPISever.Data_Manager
                 {
                     var result = connection.Query<SportTypes>("Execute GetSportTypes");
                     return result;
-                
                 }
             }
             catch (Exception ex )
             {
-
                 throw ex;
             }
         }
 
         public IQueryable<SportTypes> RunStoreProced(string StoreProcedure)
         {
-            return _hollywoodbetsDBContext.SportTypes.FromSqlRaw(StoreProcedure);
+            throw new NotImplementedException();
         }
 
         public void Update(SportTypes entity)
         {
-            throw new NotImplementedException();
+            using (var connection = DbService.sqlConnection()) 
+            {
+                var results = connection.Execute($"Execute dbo.UpdateSportType{entity.SportId},{entity.Name},{entity.Imageurl}");
+            }
         }
     }
 }

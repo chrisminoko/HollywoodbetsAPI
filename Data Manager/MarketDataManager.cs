@@ -27,7 +27,7 @@ namespace SportAPISever.Data_Manager
             throw new NotImplementedException();
         }
 
-        public Market Get(int id)
+        public Market Get(int? id)
         {
             throw new NotImplementedException();
         }

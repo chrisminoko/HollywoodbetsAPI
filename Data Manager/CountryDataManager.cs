@@ -27,7 +27,7 @@ namespace SportAPISever.Data_Manager
             throw new NotImplementedException();
         }
 
-        public Country Get(int id)
+        public Country Get(int? id)
         {
             throw new NotImplementedException();
         }
