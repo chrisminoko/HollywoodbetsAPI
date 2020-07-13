@@ -28,8 +28,8 @@ namespace SportAPISever.Data_Manager
                 if (connection.State == ConnectionState.Closed)
                     connection.Open();
                 DynamicParameters parameters = new DynamicParameters();
-                parameters.Add("@Name", entity.Name);
-                parameters.Add("@Imageurl", entity.Imageurl);
+                parameters.Add("@name", entity.Name);
+                parameters.Add("@imageurl", entity.Imageurl);
                 rowAffected = connection.Execute("AddSportType", parameters, commandType: CommandType.StoredProcedure);
             }
 

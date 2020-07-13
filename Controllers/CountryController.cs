@@ -28,6 +28,14 @@ namespace SportAPISever.Controllers
        
             return Ok(results);
         }
+        [HttpGet]
+        [Route("Search")]
+        public IActionResult  Get(int? sportid)
+        {
+            var results = _country.Get(sportid);
+
+            return Ok(results);
+        }
 
         [HttpGet]
         [Route("GetAll")]

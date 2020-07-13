@@ -40,6 +40,15 @@ namespace SportAPISever.Controllers
             return Ok(results);
         }
 
+        [HttpGet]
+        [Route("Search")]
+        public IActionResult Get(int? id)
+        {
+            var results = _betType.Get(id);
+            return Ok(results);
+        }
+
+
         [HttpPost]
         public int Post([FromBody] BetTypes  betTypes)
         {
