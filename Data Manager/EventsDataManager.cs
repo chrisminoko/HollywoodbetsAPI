@@ -17,12 +17,12 @@ namespace SportAPISever.Data_Manager
         {
             _hollywoodbetsDBContext = hollywoodbetsDBContext;
         }
-        public void Add(Events entity)
+        public int Add(Events entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(Events entity)
+        public int Delete(int id)
         {
             throw new NotImplementedException();
         }
@@ -77,7 +77,7 @@ namespace SportAPISever.Data_Manager
             return _hollywoodbetsDBContext.Events.FromSqlRaw(StoreProcedure);
         }
 
-        public void Update(Events entity)
+        public int Update(Events entity)
         {
             throw new NotImplementedException();
         }

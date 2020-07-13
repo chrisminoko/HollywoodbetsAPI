@@ -1,0 +1,143 @@
+2020-07-12 19:51:19,381  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-12 19:51:19,701  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 19:51:19,706  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 19:51:19,710  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\CHRIS\Source\Repos\HollywoodbetsAPI2
+ 2020-07-12 19:51:46,437  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-12 19:52:12,186  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-12 19:52:20,217  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'BetEventsDetails'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 19:52:20,246  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'ODDS' on entity type 'OddsDetails'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 19:52:20,523  INFO SportAPISever.Controllers.BetTypesController.? [?] - MESSAGE: Get TournamentBetypes : 
+ 2020-07-12 19:52:28,135  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-12 19:52:39,241  INFO SportAPISever.Controllers.BetTypesController.? [?] - MESSAGE: Get TournamentBetypes : 
+ 2020-07-12 19:52:49,520  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-12 19:52:49,718  INFO SportAPISever.Controllers.BetTypesController.? [?] - MESSAGE: Get TournamentBetypes : 
+ 2020-07-12 21:51:55,343  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-12 21:51:55,534  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 21:51:55,543  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 21:51:55,552  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\CHRIS\Source\Repos\HollywoodbetsAPI2
+ 2020-07-12 21:52:08,267  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-12 21:52:42,415  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-12 21:58:32,210  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-12 21:58:32,258  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 21:58:32,267  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 21:58:32,276  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\CHRIS\Source\Repos\HollywoodbetsAPI2
+ 2020-07-12 21:58:39,303  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-12 21:58:50,253  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-12 21:58:54,530  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'BetEventsDetails'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 21:58:54,538  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'ODDS' on entity type 'OddsDetails'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 21:58:54,632  INFO SportAPISever.Controllers.BetTypesController.? [?] - MESSAGE: Get TournamentBetypes : 
+ 2020-07-12 22:09:48,629  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-12 22:09:48,664  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 22:09:48,669  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 22:09:48,674  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\CHRIS\Source\Repos\HollywoodbetsAPI2
+ 2020-07-12 22:09:53,515  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-12 22:10:22,753 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.? [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+SportAPISever.Controllers.BetTypesController.GetTournamentBetTypes (SportAPISever)
+SportAPISever.Controllers.BetTypesController.Get (SportAPISever)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-07-12 22:12:01,232  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-12 22:12:01,260  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 22:12:01,263  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 22:12:01,267  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\CHRIS\Source\Repos\HollywoodbetsAPI2
+ 2020-07-12 22:12:06,562  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-12 22:17:03,539  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-12 22:17:03,578  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 22:17:03,586  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 22:17:03,591  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\CHRIS\Source\Repos\HollywoodbetsAPI2
+ 2020-07-12 22:17:08,075  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-12 22:29:35,688  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-12 22:29:35,729  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 22:29:35,733  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 22:29:35,739  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\CHRIS\Source\Repos\HollywoodbetsAPI2
+ 2020-07-12 22:29:39,840  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-12 22:32:38,964  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'BetEventsDetails'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 22:32:38,978  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'ODDS' on entity type 'OddsDetails'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 22:32:39,109  INFO SportAPISever.Controllers.BetTypesController.? [?] - MESSAGE: Get TournamentBetypes : 
+ 2020-07-12 22:32:40,770 ERROR Microsoft.EntityFrameworkCore.Database.Command.? [?] - MESSAGE: Failed executing DbCommand (256ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+[dbo].[TournamentBetType]@TournamentID=
+ 2020-07-12 22:32:41,452 ERROR Microsoft.EntityFrameworkCore.Query.? [?] - MESSAGE: An exception occurred while iterating over the results of a query for context type 'SportAPISever.Context.HollywoodbetsDBContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '='.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:540ae1b4-07fd-4a70-8d2d-7b53899e906b
+Error Number:102,State:1,Class:15
+ Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '='.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:540ae1b4-07fd-4a70-8d2d-7b53899e906b
+Error Number:102,State:1,Class:15
+2020-07-12 22:32:41,723 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.? [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '='.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.AsyncEnumerableReader.ReadInternal[T](IAsyncEnumerable`1 value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.AsyncEnumerableReader.ReadInternal[T](IAsyncEnumerable`1 value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncEnumerable(ActionContext context, ObjectResult result, IAsyncEnumerable`1 asyncEnumerable)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|27_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:540ae1b4-07fd-4a70-8d2d-7b53899e906b
+Error Number:102,State:1,Class:15
+2020-07-12 22:33:42,887  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-12 22:33:42,932  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 22:33:42,937  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 22:33:42,942  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\CHRIS\Source\Repos\HollywoodbetsAPI2
+ 2020-07-12 22:33:47,500  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-12 22:39:31,761  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-12 22:39:31,789  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 22:39:31,794  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 22:39:31,797  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\CHRIS\Source\Repos\HollywoodbetsAPI2
+ 2020-07-12 22:39:35,672  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-12 22:40:26,561  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-12 22:40:26,589  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 22:40:26,593  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 22:40:26,596  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\CHRIS\Source\Repos\HollywoodbetsAPI2
+ 2020-07-12 22:40:29,559  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 

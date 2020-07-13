@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Dapper;
+using System.Data;
 
 namespace SportAPISever.Data_Manager
 {
@@ -17,17 +18,26 @@ namespace SportAPISever.Data_Manager
         {
             _hollywoodbetsDBContext = hollywoodbetsDBContext;
         }
-        public void Add(SportTypes entity)
+        public int Add(SportTypes entity)
         {
 
-            using (var connection = DbService.sqlConnection()) 
+
+            int rowAffected = 0;
+            using (var connection = DbService.sqlConnection())
             {
-                var result = connection.Execute($"EXECUTE dbo.AddSportType{entity.Name},{entity.Imageurl}");
+                if (connection.State == ConnectionState.Closed)
+                    connection.Open();
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@Name", entity.Name);
+                parameters.Add("@Imageurl", entity.Imageurl);
+                rowAffected = connection.Execute("AddSportType", parameters, commandType: CommandType.StoredProcedure);
             }
-            
+
+            return rowAffected;
+
         }
 
-        public void Delete(SportTypes entity)
+        public int Delete(int id)
         {
             throw new NotImplementedException();
         }
@@ -45,7 +55,7 @@ namespace SportAPISever.Data_Manager
         public  SportTypes Get(int? id)
         {
          
-            var sql = "SELECT * FROM sportTypes WHERE  sportId =@Id";
+            var sql = "SELECT * FROM sportTypes WHERE  sportId=@Id";
             using (var connection = DbService.sqlConnection())
             {
                 connection.Open();
@@ -58,7 +68,7 @@ namespace SportAPISever.Data_Manager
         {
             try
             {
-                //DeleteSportTree(1);
+                
 
                 using (var connection = DbService.sqlConnection()) 
                 {
@@ -77,12 +87,21 @@ namespace SportAPISever.Data_Manager
             throw new NotImplementedException();
         }
 
-        public void Update(SportTypes entity)
+        public int Update(SportTypes entity)
         {
-            using (var connection = DbService.sqlConnection()) 
+            int rowAffected = 0;
+            using (var connection = DbService.sqlConnection())
             {
-                var results = connection.Execute($"Execute dbo.UpdateSportType{entity.SportId},{entity.Name},{entity.Imageurl}");
+                if (connection.State == ConnectionState.Closed)
+                    connection.Open();
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@SportId", entity.SportId);
+                parameters.Add("@Name", entity.Name);
+                parameters.Add("@Imageurl", entity.Imageurl);
+                rowAffected = connection.Execute("UpdateCountry", parameters, commandType: CommandType.StoredProcedure);
             }
+
+            return rowAffected;
         }
     }
 }
