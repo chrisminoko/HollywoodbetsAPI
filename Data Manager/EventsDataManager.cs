@@ -7,6 +7,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SportAPISever.Model.View_Models;
+using System.Data;
+using Dapper;
 
 namespace SportAPISever.Data_Manager
 {
@@ -19,22 +21,52 @@ namespace SportAPISever.Data_Manager
         }
         public int Add(Events entity)
         {
-            throw new NotImplementedException();
+            int rowAffected = 0;
+            using (var connection = DbService.sqlConnection())
+            {
+                if (connection.State == ConnectionState.Closed)
+                    connection.Open();
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@TournamentId", entity.TournamentId);
+                parameters.Add("@EventName", entity.EventName);
+                parameters.Add("@EvebtDate", entity.EventDate);
+                rowAffected = connection.Execute("AddTournament", parameters, commandType: CommandType.StoredProcedure);
+            }
+
+            return rowAffected;
         }
 
         public int Delete(int id)
         {
-            throw new NotImplementedException();
+            using (var connection = DbService.sqlConnection())
+            {
+                var parameter = new { Id = id };
+                var affectedRows = connection.Execute("DELETE Events WHERE  EventId=@Id", parameter);
+                return affectedRows;
+            }
+
         }
 
         public Events Get(int? id)
         {
-            throw new NotImplementedException();
+            var sql = "SELECT * FROM Events WHERE  EventId=@Id";
+            using (var connection = DbService.sqlConnection())
+            {
+                connection.Open();
+                var result = connection.Query<Events>(sql, new { Id = id });
+                return result.FirstOrDefault();
+            }
         }
 
         public IEnumerable<Events> GetAll()
         {
-            throw new NotImplementedException();
+            var sql = "SELECT * FROM Events";
+            using (var connection = DbService.sqlConnection())
+            {
+                connection.Open();
+                var result = connection.Query<Events>(sql);
+                return result.ToList();
+            }
         }
 
         public IEnumerable<BetEventsDetails> GetBetEvents(int? TournamentId)
@@ -79,7 +111,20 @@ namespace SportAPISever.Data_Manager
 
         public int Update(Events entity)
         {
-            throw new NotImplementedException();
+            int rowAffected = 0;
+            using (var connection = DbService.sqlConnection())
+            {
+                if (connection.State == ConnectionState.Closed)
+                    connection.Open();
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@EventID", entity.EventId);
+                parameters.Add("@TournamentId", entity.TournamentId);
+                parameters.Add("@EventName", entity.EventName);
+                parameters.Add("@EvebtDate", entity.EventDate);
+                rowAffected = connection.Execute("UpdateEvents", parameters, commandType: CommandType.StoredProcedure);
+            }
+
+            return rowAffected;
         }
 
    

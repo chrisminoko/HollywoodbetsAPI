@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
+using Dapper;
 
 namespace SportAPISever.Data_Manager
 {
@@ -19,17 +21,38 @@ namespace SportAPISever.Data_Manager
 
         public int Add(Market entity)
         {
-            throw new NotImplementedException();
+            int rowAffected = 0;
+            using (var connection = DbService.sqlConnection())
+            {
+                if (connection.State == ConnectionState.Closed)
+                    connection.Open();
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@MarketId", entity.MarkeType);
+                rowAffected = connection.Execute("UpdateMarket", parameters, commandType: CommandType.StoredProcedure);
+            }
+
+            return rowAffected;
         }
 
         public int Delete(int id)
         {
-            throw new NotImplementedException();
+            using (var connection = DbService.sqlConnection())
+            {
+                var parameter = new { Id = id };
+                var affectedRows = connection.Execute("DELETE Market WHERE  MarketId=@Id", parameter);
+                return affectedRows;
+            }
         }
 
         public Market Get(int? id)
         {
-            throw new NotImplementedException();
+            var sql = "SELECT * FROM Market WHERE  MarketId=@Id";
+            using (var connection = DbService.sqlConnection())
+            {
+                connection.Open();
+                var result = connection.Query<Market>(sql, new { Id = id });
+                return result.FirstOrDefault();
+            }
         }
 
         public IEnumerable<Market> GetAll()
@@ -53,7 +76,18 @@ namespace SportAPISever.Data_Manager
 
         public int Update(Market entity)
         {
-            throw new NotImplementedException();
+            int rowAffected = 0;
+            using (var connection = DbService.sqlConnection())
+            {
+                if (connection.State == ConnectionState.Closed)
+                    connection.Open();
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@MarketId", entity.MarketId);
+                parameters.Add("@MarketName", entity.MarkeType);
+                rowAffected = connection.Execute("UpdateMarket", parameters, commandType: CommandType.StoredProcedure);
+            }
+
+            return rowAffected;
         }
     }
 }

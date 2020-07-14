@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Dapper;
+using Microsoft.EntityFrameworkCore;
 using SportAPISever.Context;
 using SportAPISever.Contracts;
 using SportAPISever.Model;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,22 +21,49 @@ namespace SportAPISever.Data_Manager
 
         public int Add(Tournament entity)
         {
-            throw new NotImplementedException();
+            int rowAffected = 0;
+            using (var connection = DbService.sqlConnection())
+            {
+                if (connection.State == ConnectionState.Closed)
+                    connection.Open();
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@name", entity.Name);
+                rowAffected = connection.Execute("AddTournament", parameters, commandType: CommandType.StoredProcedure);
+            }
+
+            return rowAffected;
         }
 
         public int Delete(int id)
         {
-            throw new NotImplementedException();
+            using (var connection = DbService.sqlConnection())
+            {
+                var parameter = new { Id = id };
+                var affectedRows = connection.Execute("DELETE Tournament WHERE  TournamentID=@Id", parameter);
+                return affectedRows;
+            }
         }
 
         public Tournament Get(int? id)
         {
-            throw new NotImplementedException();
+            var sql = "SELECT * FROM Tournament WHERE  TournamentID=@Id";
+            using (var connection = DbService.sqlConnection())
+            {
+                connection.Open();
+                var result = connection.Query<Tournament>(sql, new { Id = id });
+                return result.FirstOrDefault();
+            }
         }
 
         public IEnumerable<Tournament> GetAll()
         {
-            throw new NotImplementedException();
+            var sql = "SELECT * FROM Tournament";
+            using (var connection = DbService.sqlConnection())
+            {
+                connection.Open();
+                var result = connection.Query<Tournament>(sql);
+                return result.ToList();
+            }
         }
 
         public IQueryable<Tournament> GetTournamentBasedOnCountries(int? id)
@@ -58,7 +87,18 @@ namespace SportAPISever.Data_Manager
 
         public int Update(Tournament entity)
         {
-            throw new NotImplementedException();
+            int rowAffected = 0;
+            using (var connection = DbService.sqlConnection())
+            {
+                if (connection.State == ConnectionState.Closed)
+                    connection.Open();
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@TournamentID", entity.TournamentId);
+                parameters.Add("@name", entity.Name);
+                rowAffected = connection.Execute("UpdateTournament", parameters, commandType: CommandType.StoredProcedure);
+            }
+
+            return rowAffected;
         }
     }
 }

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SportAPISever.Contracts;
+using SportAPISever.Model;
 
 namespace SportAPISever.Controllers
 {
@@ -27,15 +28,43 @@ namespace SportAPISever.Controllers
             return Ok(Tournaments);
         }
 
+        [HttpGet]
+        [Route("GetAll")]
+        public IActionResult Get()
+        {
+            var results = _events.GetAll();
+            return Ok(results);
+        }
+
+        [HttpGet]
+        [Route("Search")]
+        public IActionResult Get(int? id)
+        {
+            var results = _events.Get(id);
+            return Ok(results);
+        }
 
 
+        [HttpPost]
+        public int Post([FromBody] Events events)
+        {
+            return _events.Add(events);
 
-        //[HttpGet]
-        //public IActionResult GetEventsByTournamentID(int? TournamentID)
-        //{
-        //    var Tournaments = _events.GetBetEvents(TournamentID);
-        //    return Ok(Tournaments);
-        //}
+        }
+
+
+        [HttpPut]
+        public int Put([FromBody] Events events)
+        {
+            return _events.Update(events);
+        }
+
+
+        [HttpDelete("{id}")]
+        public int Delete(int id)
+        {
+            return _events.Delete(id);
+        }
 
 
     }
