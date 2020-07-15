@@ -52,6 +52,9 @@ namespace SportAPISever
             services.AddScoped<IMarket, MarketDataManager>();
             services.AddScoped<IEventMarket, EventMarketType>();
             services.AddScoped<IOddsDetails, OddsDataManager>();
+            services.AddScoped<ISportCountry, SportCountryDataManager>();
+            services.AddScoped<ISportTournament, SportTournamentDataManager>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo

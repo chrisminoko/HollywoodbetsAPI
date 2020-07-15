@@ -26,9 +26,9 @@ namespace SportAPISever.Controllers
         }
         [HttpGet]
         [Route("Search")]
-        public IActionResult Get(int? sportid)
+        public IActionResult Get(int? id)
         {
-            var results = _tournament.Get(sportid);
+            var results = _tournament.Get(id);
 
             return Ok(results);
         }
