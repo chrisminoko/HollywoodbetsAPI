@@ -41,6 +41,14 @@ namespace SportAPISever.Controllers
             return Ok(results);
         }
 
+        [HttpGet]
+        [Route("TournamentBettype")]
+        public IActionResult GetTournamentBettype()
+        {
+            var results = _tournament.GetTournamentBettypes();
+            return Ok(results);
+        }
+
         [HttpPost]
         public int Post([FromBody] Tournament tournament)
         {

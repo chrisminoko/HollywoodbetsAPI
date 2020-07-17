@@ -24,6 +24,14 @@ namespace SportAPISever.Controllers
 
 
         [HttpGet]
+        [Route("showsportcountry")]
+        public IActionResult ShowSportCountry()
+        {
+            var results = _sportcountry.GetSportCountry();
+            return Ok(results);
+        }
+
+        [HttpGet]
         [Route("GetAll")]
         public IActionResult Get()
         {

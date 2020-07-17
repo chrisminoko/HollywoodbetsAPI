@@ -2,6 +2,7 @@
 using SportAPISever.Context;
 using SportAPISever.Contracts;
 using SportAPISever.Model;
+using SportAPISever.Model.View_Models;
 using SportAPISever.Repository;
 using System;
 using System.Collections.Generic;
@@ -60,6 +61,18 @@ namespace SportAPISever.Data_Manager
                 var result = connection.Query<SportCountry>(sql);
                 return result.ToList();
             }
+        }
+
+        public IEnumerable<ShowSportCountry> GetSportCountry()
+        {
+            var sql = "EXEC  ShowSportCountry";
+            using (var connection = DbService.sqlConnection())
+            {
+                connection.Open();
+                var result = connection.Query<ShowSportCountry>(sql);
+                return result.ToList();
+            }
+
         }
 
         public IQueryable<SportCountry> RunStoreProced(string StoreProcedure)

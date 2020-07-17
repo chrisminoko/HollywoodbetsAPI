@@ -2,6 +2,7 @@
 using SportAPISever.Context;
 using SportAPISever.Contracts;
 using SportAPISever.Model;
+using SportAPISever.Model.View_Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -22,7 +23,7 @@ namespace SportAPISever.Data_Manager
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@SportId", entity.SportId);
                 parameters.Add("@CountryId", entity.CountryId);
-                parameters.Add("@TournamentId", entity.SportTournamentId);
+                parameters.Add("@TournamentId", entity.TournamentId);
                 rowAffected = connection.Execute("AddSportTournament", parameters, commandType: CommandType.StoredProcedure);
             }
 
@@ -57,6 +58,17 @@ namespace SportAPISever.Data_Manager
             {
                 connection.Open();
                 var result = connection.Query<SportTournament>(sql);
+                return result.ToList();
+            }
+        }
+
+        public IEnumerable<SportCountryTournament> GetSportCountryTournaments()
+        {
+            var sql = "EXEC  DisplaySportTournament";
+            using (var connection = DbService.sqlConnection())
+            {
+                connection.Open();
+                var result = connection.Query<SportCountryTournament>(sql);
                 return result.ToList();
             }
         }

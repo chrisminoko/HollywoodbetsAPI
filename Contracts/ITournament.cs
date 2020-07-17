@@ -1,4 +1,5 @@
 ﻿using SportAPISever.Model;
+using SportAPISever.Model.View_Models;
 using SportAPISever.Repository;
 using System;
 using System.Collections.Generic;
@@ -10,5 +11,6 @@ namespace SportAPISever.Contracts
   public  interface ITournament:IRepositoryBase<Tournament>
     {
         IQueryable<Tournament> GetTournamentBasedOnCountries(int ? id);
+        IEnumerable<TournamentBettype> GetTournamentBettypes();
     }
 }

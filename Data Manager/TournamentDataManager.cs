@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using SportAPISever.Context;
 using SportAPISever.Contracts;
 using SportAPISever.Model;
+using SportAPISever.Model.View_Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -77,6 +78,17 @@ namespace SportAPISever.Data_Manager
             {
 
                 throw;
+            }
+        }
+
+        public IEnumerable<TournamentBettype> GetTournamentBettypes()
+        {
+            var sql = "EXEC  DisplayTournamentBetTypes";
+            using (var connection = DbService.sqlConnection())
+            {
+                connection.Open();
+                var result = connection.Query<TournamentBettype>(sql);
+                return result.ToList();
             }
         }
 

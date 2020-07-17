@@ -1,4 +1,5 @@
 ﻿using SportAPISever.Model;
+using SportAPISever.Model.View_Models;
 using SportAPISever.Repository;
 using System;
 using System.Collections.Generic;
@@ -9,5 +10,6 @@ namespace SportAPISever.Contracts
 {
     public interface ISportCountry: IRepositoryBase<SportCountry>
     {
+        IEnumerable<ShowSportCountry> GetSportCountry();
     }
 }
