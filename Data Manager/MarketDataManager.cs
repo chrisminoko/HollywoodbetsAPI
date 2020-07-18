@@ -27,8 +27,8 @@ namespace SportAPISever.Data_Manager
                 if (connection.State == ConnectionState.Closed)
                     connection.Open();
                 DynamicParameters parameters = new DynamicParameters();
-                parameters.Add("@MarketId", entity.MarkeType);
-                rowAffected = connection.Execute("UpdateMarket", parameters, commandType: CommandType.StoredProcedure);
+                parameters.Add("@MarketName", entity.MarkeType);
+                rowAffected = connection.Execute("AddMarket", parameters, commandType: CommandType.StoredProcedure);
             }
 
             return rowAffected;

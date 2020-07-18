@@ -30,7 +30,7 @@ namespace SportAPISever.Data_Manager
                 parameters.Add("@TournamentId", entity.TournamentId);
                 parameters.Add("@EventName", entity.EventName);
                 parameters.Add("@EvebtDate", entity.EventDate);
-                rowAffected = connection.Execute("AddTournament", parameters, commandType: CommandType.StoredProcedure);
+                rowAffected = connection.Execute("AddEvent", parameters, commandType: CommandType.StoredProcedure);
             }
 
             return rowAffected;
@@ -45,6 +45,17 @@ namespace SportAPISever.Data_Manager
                 return affectedRows;
             }
 
+        }
+
+        public IEnumerable<DisplayEvents> DisplayEvents()
+        {
+            var sql = "EXEC  ShowEvent";
+            using (var connection = DbService.sqlConnection())
+            {
+                connection.Open();
+                var result = connection.Query<DisplayEvents>(sql);
+                return result.ToList();
+            }
         }
 
         public Events Get(int? id)

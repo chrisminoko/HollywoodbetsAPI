@@ -13,6 +13,7 @@ namespace SportAPISever.Contracts
         IEnumerable<Events> GetTournamentEventsByID(int ? TournamentId);
         IEnumerable<BetEventsDetails> GetBetEvents(int? TournamentId);
         IEnumerable<BetEventsDetails> RunStorePro(string StoreProcedure);
+        IEnumerable<DisplayEvents> DisplayEvents();
 
     }
 }

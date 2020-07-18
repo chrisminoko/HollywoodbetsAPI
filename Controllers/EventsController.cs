@@ -37,6 +37,14 @@ namespace SportAPISever.Controllers
         }
 
         [HttpGet]
+        [Route("ShowEvents")]
+        public IActionResult DisplayEvents()
+        {
+            var results = _events.DisplayEvents();
+            return Ok(results);
+        }
+
+        [HttpGet]
         [Route("Search")]
         public IActionResult Get(int? id)
         {
