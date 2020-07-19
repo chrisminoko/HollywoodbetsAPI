@@ -5,6 +5,7 @@ namespace SportAPISever.Model
 {
     public partial class BettyepeMarkets
     {
+        public int BetTypeMarketID { get; set; }
         public int? BetypeMarketId { get; set; }
         public int? BetTypeId { get; set; }
 
