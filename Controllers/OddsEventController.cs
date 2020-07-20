@@ -29,12 +29,20 @@ namespace SportAPISever.Controllers
         }
 
         [HttpGet]
-
         public IActionResult Get()
         {
             var results = _oddsEvents.GetOddsEvents();
             return Ok(results);
         }
+
+        [HttpGet]
+        [Route("GetEvents")]
+        public IActionResult GetOdds()
+        {
+            var results = _oddsEvents.GetAll();
+            return Ok(results);
+        }
+
 
 
         [HttpPost]

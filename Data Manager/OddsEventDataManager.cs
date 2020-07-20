@@ -53,7 +53,13 @@ namespace SportAPISever.Data_Manager
 
         public IEnumerable<OddsEvents> GetAll()
         {
-            throw new NotImplementedException();
+            var sql = "SELECT * FROM Odds";
+            using (var connection = DbService.sqlConnection())
+            {
+                connection.Open();
+                var result = connection.Query<OddsEvents>(sql);
+                return result.ToList();
+            }
         }
 
         public IEnumerable<OddEvent> GetOddsEvents()
