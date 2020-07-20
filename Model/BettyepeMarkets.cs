@@ -9,7 +9,7 @@ namespace SportAPISever.Model
         public int? BetypeMarketId { get; set; }
         public int? BetTypeId { get; set; }
 
-        public virtual BetTypes BetType { get; set; }
-        public virtual Market BetypeMarket { get; set; }
+        //public virtual BetTypes BetType { get; set; }
+        //public virtual Market BetypeMarket { get; set; }
     }
 }

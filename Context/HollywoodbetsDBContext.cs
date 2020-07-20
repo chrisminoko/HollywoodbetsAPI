@@ -60,15 +60,15 @@ namespace SportAPISever.Context
 
                 entity.Property(e => e.BetypeMarketId).HasColumnName("BetypeMarketID");
 
-                entity.HasOne(d => d.BetType)
-                    .WithMany()
-                    .HasForeignKey(d => d.BetTypeId)
-                    .HasConstraintName("FK__BettyepeM__BetTy__38996AB5");
+                //entity.HasOne(d => d.BetType)
+                //    .WithMany()
+                //    .HasForeignKey(d => d.BetTypeId)
+                //    .HasConstraintName("FK__BettyepeM__BetTy__38996AB5");
 
-                entity.HasOne(d => d.BetypeMarket)
-                    .WithMany()
-                    .HasForeignKey(d => d.BetypeMarketId)
-                    .HasConstraintName("FK__BettyepeM__Betyp__37A5467C");
+                //entity.HasOne(d => d.BetypeMarket)
+                //    .WithMany()
+                //    .HasForeignKey(d => d.BetypeMarketId)
+                //    .HasConstraintName("FK__BettyepeM__Betyp__37A5467C");
             });
 
             modelBuilder.Entity<Country>(entity =>
@@ -144,7 +144,7 @@ namespace SportAPISever.Context
             {
                 entity.HasNoKey();
 
-                entity.Property(e => e.TournamentBetypeId).HasColumnName("TournamentBetypeID");
+                entity.Property(e => e.TournamentId).HasColumnName("TournamentBetypeID");
             });
 
             OnModelCreatingPartial(modelBuilder);
