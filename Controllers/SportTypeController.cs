@@ -107,7 +107,7 @@ namespace SportAPISever.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"Something went wrong inside AddSportType action: {ex.Message}");
-                return StatusCode(500, "Internal server error");
+                return BadRequest("Internal Server Error: "+ex);
             }
 
         }

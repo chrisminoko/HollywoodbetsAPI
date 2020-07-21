@@ -96,9 +96,9 @@ namespace SportAPISever.Data_Manager
                     connection.Open();
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@SportId", entity.SportId);
-                parameters.Add("@Name", entity.Name);
+                parameters.Add("@SportName", entity.Name);
                 parameters.Add("@Imageurl", entity.Imageurl);
-                rowAffected = connection.Execute("UpdateCountry", parameters, commandType: CommandType.StoredProcedure);
+                rowAffected = connection.Execute("UpdateSportType", parameters, commandType: CommandType.StoredProcedure);
             }
 
             return rowAffected;
