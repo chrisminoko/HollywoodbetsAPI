@@ -82,7 +82,19 @@ namespace SportAPISever.Data_Manager
 
         public int Update(SportCountry entity)
         {
-            throw new NotImplementedException();
+            int rowAffected = 0;
+            using (var connection = DbService.sqlConnection())
+            {
+                if (connection.State == ConnectionState.Closed)
+                    connection.Open();
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@SportCountryId", entity.SportCountryId);
+                parameters.Add("@CountryId", entity.CountryId);
+                parameters.Add("@SportId", entity.SportId);
+                rowAffected = connection.Execute("UpdateSportCountry", parameters, commandType: CommandType.StoredProcedure);
+            }
+
+            return rowAffected;
         }
     }
 }
