@@ -1,0 +1,154 @@
+2020-07-23 11:20:37,778  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-23 11:20:37,826  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-23 11:20:37,833  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-23 11:20:37,882  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\User1\Source\Repos\HollywoodbetsAPI256
+ 2020-07-23 11:20:42,519  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 11:20:42,519  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 11:20:45,146  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 11:20:53,656  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 11:22:33,473  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 11:22:44,384  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 11:25:47,091  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 11:26:43,204  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 11:27:17,417  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 11:28:04,916  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 11:28:10,561  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 11:28:44,993  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 11:29:03,521  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 11:29:23,651  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:42:21,640  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:42:24,276  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:43:10,101  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:43:17,901  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:43:23,334  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:43:46,514  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:43:53,269  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:43:59,511  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:44:06,978  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:45:15,447  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-23 14:45:15,511  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-23 14:45:15,516  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-23 14:45:15,521  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\User1\Source\Repos\HollywoodbetsAPI256
+ 2020-07-23 14:45:18,679  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:46:26,232  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:46:52,081  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-23 14:46:52,123  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-23 14:46:52,129  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-23 14:46:52,134  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\User1\Source\Repos\HollywoodbetsAPI256
+ 2020-07-23 14:46:54,158  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:47:47,535  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:47:56,275  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:48:01,075  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:48:06,676  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:48:28,220  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:48:32,025  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:48:38,780  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:48:43,061  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:49:13,664  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:49:27,285  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:53:31,308  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-23 14:53:31,347  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-23 14:53:31,354  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-23 14:53:31,359  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\User1\Source\Repos\HollywoodbetsAPI256
+ 2020-07-23 14:53:33,500  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:53:39,330  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:55:14,586  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:55:23,045  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:55:52,092  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:56:10,431  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 14:56:13,934  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:07:08,027  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:07:42,504  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'BetEventsDetails'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-23 15:07:42,515  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'ODDS' on entity type 'OddsDetails'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-23 15:07:47,529  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:07:50,326  INFO SportAPISever.Controllers.BetTypesController.? [?] - MESSAGE: Get TournamentBetypes : 
+ 2020-07-23 15:11:03,874  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:11:06,638  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:11:41,922  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:11:47,609  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:12:23,131  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:12:40,963  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:12:46,299  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:12:57,545  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:13:07,929  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:13:16,311  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:13:22,960  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:13:26,773  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:13:58,323  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:14:01,543  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:14:15,825  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:14:18,865  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:14:54,846  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:15:02,925  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:15:05,880  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:15:54,314  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:16:02,593  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:16:15,451  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:16:19,253  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:16:32,664  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:16:44,898  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:16:51,700  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:17:08,784  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:17:17,895  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:17:26,081  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:17:34,241  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:17:34,351  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:23:31,808  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:23:38,031  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:23:41,225  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:23:42,017  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:24:18,688  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:24:22,664  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:48:59,153  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-23 15:48:59,195  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-23 15:48:59,200  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-23 15:48:59,206  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\User1\Source\Repos\HollywoodbetsAPI256
+ 2020-07-23 15:49:01,046  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:49:41,580  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:50:43,372  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:50:51,649  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:51:00,339  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:51:10,870  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:51:25,030  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:56:39,435  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 15:56:43,279  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:17:53,392  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:17:54,811  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:18:37,631  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:18:39,922  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:19:09,058  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:19:11,749  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:19:16,192  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:20:37,044  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:20:45,440  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:20:47,039  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:21:05,482  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:21:18,955  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:21:32,218  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:21:44,581  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:21:46,261  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:23:20,202  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:23:23,289  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:23:48,448  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:24:06,416  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:30:22,510  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:30:27,727  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:30:53,900  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:30:57,826  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:31:07,830  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:31:13,154  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:31:27,697  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:35:53,410  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:35:56,842  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:53:01,470  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:53:13,062  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:53:14,372  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:54:01,079  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:54:04,433  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:55:10,821  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:55:16,991  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:55:18,601  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:55:38,244  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:55:41,036  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-23 16:55:44,987  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 

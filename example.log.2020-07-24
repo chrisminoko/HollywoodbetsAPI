@@ -1,0 +1,70 @@
+2020-07-24 07:44:06,363  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5000
+ 2020-07-24 07:44:06,407  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-24 07:44:06,414  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-24 07:44:06,443  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\User1\Source\Repos\HollywoodbetsAPI256
+ 2020-07-24 07:44:11,466  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 07:44:22,220  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 07:44:42,930  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 07:44:44,089  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 07:45:50,669  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 07:46:43,647  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'BetEventsDetails'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-24 07:46:43,658  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'ODDS' on entity type 'OddsDetails'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-24 07:46:48,745  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 07:46:49,917  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 07:47:51,846  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 07:50:38,285  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 07:51:50,693  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:27:47,422  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:35:05,822  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:38:59,761  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:39:01,465  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:39:10,985  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:39:19,341  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:39:26,038  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:39:26,858  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:40:05,048  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:40:06,347  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:41:14,726  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:41:15,920  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:41:29,547  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:41:38,984  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:49:42,470  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:49:44,172  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:50:53,265  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:50:57,568  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:51:26,899  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 08:58:46,556  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:05:06,586  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:05:08,892  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:05:36,678  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:05:38,098  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:06:39,444  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:06:40,359  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:13:09,601  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:13:12,848  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:14:09,736  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:14:30,222  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:23:24,908  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:25:04,718  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:25:12,673  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:25:37,524  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:25:38,618  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:26:22,087  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:26:37,810  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:26:42,169  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:26:45,601  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:26:49,366  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:26:53,772  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:26:56,264  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:27:00,820  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:27:03,064  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:27:24,118  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:27:25,237  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:31:17,908  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:34:04,295  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:34:25,435  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 09:34:26,802  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 10:48:11,313  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 10:48:39,890  INFO SportAPISever.Controllers.SportTypeController.? [?] - MESSAGE: Get Call for Sport Types :
+ 2020-07-24 10:48:40,048  INFO SportAPISever.Controllers.BetTypesController.? [?] - MESSAGE: Get TournamentBetypes : 
+ 
