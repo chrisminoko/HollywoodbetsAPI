@@ -21,7 +21,7 @@ Bettype-Markets.
 The Project also comes with an Admin Section to perform all crud related actions Eg The creation of sports , Bet types , Markets etc and the mapping of the association tables to the correct classes. This is built using Angular 9 and Boostrap 4. 
 
 The Main site is built using angular 9 as well, You can view various sport, bettypes , odds and even strick
-
+![image](https://user-images.githubusercontent.com/42572223/88549812-0e432100-d021-11ea-8c91-72183db6924a.png)
 ![image](https://user-images.githubusercontent.com/42572223/88543691-a12b8d80-d018-11ea-87da-127849e2605c.png)
 ![image](https://user-images.githubusercontent.com/42572223/88543763-baccd500-d018-11ea-95c9-e71aa44e5cf2.png)
 ![image](https://user-images.githubusercontent.com/42572223/88543810-ce783b80-d018-11ea-99be-ecc854c04e2e.png)
