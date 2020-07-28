@@ -1,6 +1,6 @@
 # HollywoodbetsAPI
 The Hollywoodbet API is built using DotNet Core 3.1 and Dapper as the ORM. Repository pattern and long side a database first approach has been used to structure to project.
-
+The Main Site reads from the API and get the data from the Db and the admin site does all the crud for the database and reflects on the main site which is the bet striking site.
 Model Folder Includes the following classes:
 
 Sport Types
