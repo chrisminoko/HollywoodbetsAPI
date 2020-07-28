@@ -11,7 +11,7 @@ Tournaments
 Odds
 Events
 
-Association Tables are 
+# Association Tables are 
 Sport-Country
 Tournament-Bettypes
 Sport-Tournaments
