@@ -19,6 +19,10 @@ Odds-Events
 Bettype-Markets.
 
 The Project also comes with an Admin Section to perform all crud related actions Eg The creation of sports , Bet types , Markets etc and the mapping of the association tables to the correct classes. This is built using Angular 9 and Boostrap 4. 
+The link below is for the FrontEnd
+https://github.com/chrisminoko/AdminSection
+The link below is for the BackEnd
+https://github.com/chrisminoko/HollywoodbetsAPI
 
 The Main site is built using angular 9 as well, You can view various sport, bettypes , odds and even strick
 ![image](https://user-images.githubusercontent.com/42572223/88549812-0e432100-d021-11ea-8c91-72183db6924a.png)
