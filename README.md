@@ -34,4 +34,4 @@ The Main site is built using angular 9 as well, You can view various sport, bett
 ![image](https://user-images.githubusercontent.com/42572223/88543955-ff587080-d018-11ea-96a1-58ffb9647bf3.png)
 ![image](https://user-images.githubusercontent.com/42572223/88543996-0e3f2300-d019-11ea-900a-e243932e69ab.png)
 ![image](https://user-images.githubusercontent.com/42572223/88544046-1eef9900-d019-11ea-9b15-a4125142b893.png)
-![image](https://user-images.githubusercontent.com/42572223/88670934-fb465480-d0e5-11ea-88ee-8d734759c351.png)
+![HOME](https://user-images.githubusercontent.com/42572223/88672729-14500500-d0e8-11ea-87de-55b95d47a1d3.png)
