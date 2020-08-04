@@ -1,6 +1,6 @@
 # HollywoodbetsAPI
 The Hollywoodbet API is built using DotNet Core 3.1 and Dapper as the ORM. Repository pattern and long side a database first approach has been used to structure to project.
-
+The Main Site reads from the API and get the data from the Db and the admin site does all the crud for the database and reflects on the main site which is the bet striking site.
 Model Folder Includes the following classes:
 
 Sport Types
@@ -19,6 +19,10 @@ Odds-Events
 Bettype-Markets.
 
 The Project also comes with an Admin Section to perform all crud related actions Eg The creation of sports , Bet types , Markets etc and the mapping of the association tables to the correct classes. This is built using Angular 9 and Boostrap 4. 
+The link below is for the FrontEnd
+https://github.com/chrisminoko/AdminSection
+The link below is for the BackEnd
+https://github.com/chrisminoko/HollywoodbetsAPI
 
 The Main site is built using angular 9 as well, You can view various sport, bettypes , odds and even strick
 ![image](https://user-images.githubusercontent.com/42572223/88549812-0e432100-d021-11ea-8c91-72183db6924a.png)
@@ -30,3 +34,4 @@ The Main site is built using angular 9 as well, You can view various sport, bett
 ![image](https://user-images.githubusercontent.com/42572223/88543955-ff587080-d018-11ea-96a1-58ffb9647bf3.png)
 ![image](https://user-images.githubusercontent.com/42572223/88543996-0e3f2300-d019-11ea-900a-e243932e69ab.png)
 ![image](https://user-images.githubusercontent.com/42572223/88544046-1eef9900-d019-11ea-9b15-a4125142b893.png)
+![HOME](https://user-images.githubusercontent.com/42572223/88672729-14500500-d0e8-11ea-87de-55b95d47a1d3.png)
