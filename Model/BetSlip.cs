@@ -11,7 +11,8 @@ namespace SportAPISever.Model
         [Key]
         public int BetSlipID { get; set; }
         public decimal StakeAmount { get; set; }
-        public decimal odds { get; set; }
-        public int UserAccount { get; set; }
+        public decimal Payout { get; set; }
+        public decimal Odds { get; set; }
+        public string UserAccount { get; set; }
     }
 }

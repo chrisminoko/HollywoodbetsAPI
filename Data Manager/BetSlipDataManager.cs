@@ -26,7 +26,7 @@ namespace SportAPISever.Data_Manager
                 if (connection.State == ConnectionState.Closed)
                     connection.Open();
                 DynamicParameters parameters = new DynamicParameters();
-                parameters.Add("@odds", entity.odds);
+                parameters.Add("@odds", entity.Odds);
                 parameters.Add("@StakeAmount", entity.StakeAmount);
                 parameters.Add("@UserAccount", entity.UserAccount);
                 rowAffected = connection.Execute("AddBetSlip", parameters, commandType: CommandType.StoredProcedure);

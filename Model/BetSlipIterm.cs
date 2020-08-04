@@ -8,7 +8,7 @@ namespace SportAPISever.Model
 {
     public class BetSlipIterm
     {
-        public BetIterm [] BetIterms { get; set; }
+        public BetIterm [] BetIterm { get; set; }
         public BetSlip  BetSlip { get; set; }
     }
 }

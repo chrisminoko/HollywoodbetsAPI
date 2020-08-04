@@ -15,39 +15,32 @@ namespace SportAPISever.Data_Manager
         public int Add(BetSlipIterm entity)
         {
             int rowAffected = 0;
-            foreach (var item in entity.BetIterms)
-            {
-                using (var connection = DbService.sqlConnection())
-                {
-                    if (connection.State == ConnectionState.Closed)
-                        connection.Open();
-                    DynamicParameters parameters = new DynamicParameters();
-                    parameters.Add("@BetSlipId", item.BetSlipId);
-                    parameters.Add("@SportID", item.SportId);
-                    parameters.Add("@BetTypeId", item.BetTypeId);
-                    parameters.Add("@EventID", item.EventId);
-                    parameters.Add("@MarketID", item.MarketId);
-                    parameters.Add("@Date", item.Date);
-                    parameters.Add("@TicketNumber", item.TicketNumber);
-                    parameters.Add("@Status", item.Status);
-                    rowAffected = connection.Execute("AddBetSlipIterm", parameters, commandType: CommandType.StoredProcedure);
-                }
+            DynamicParameters parameter = new DynamicParameters();
 
-                return rowAffected;
-            }
-            
             using (var connection = DbService.sqlConnection())
             {
                 if (connection.State == ConnectionState.Closed)
                     connection.Open();
                 DynamicParameters parameters = new DynamicParameters();
-                parameters.Add("@odds", entity.BetSlip.odds);
+                parameters.Add("@odds", entity.BetSlip.Odds);
                 parameters.Add("@StakeAmount", entity.BetSlip.StakeAmount);
                 parameters.Add("@UserAccount", entity.BetSlip.UserAccount);
                 rowAffected = connection.Execute("AddBetSlip", parameters, commandType: CommandType.StoredProcedure);
-            }
+                foreach (var item in entity.BetIterm)
+                {
 
-            return rowAffected;
+                    parameter.Add("@BetSlipId", item.BetSlipId);
+                    parameter.Add("@SportID", item.SportId);
+                    parameter.Add("@BetTypeId", item.BetTypeId);
+                    parameter.Add("@EventID", item.EventId);
+                    parameter.Add("@MarketID", item.MarketId);
+                    parameter.Add("@Date", item.Date);
+                    parameter.Add("@TicketNumber", item.TicketNumber);
+                    parameter.Add("@Status", item.Status);
+                    rowAffected+= connection.Execute("AddBetSlipIterm", parameter, commandType: CommandType.StoredProcedure);
+                }
+                    return rowAffected;
+            }
         }
 
         public int Delete(int id)

@@ -57,6 +57,7 @@ namespace SportAPISever
             services.AddScoped<IBettyepeMarkets, BettyepeMarketsDataManager>();
             services.AddScoped<ITournamentBettype, TournamentBettypeDataManager>();
             services.AddScoped<IOddsEvents, OddsEventDataManager>();
+            services.AddScoped<IBetSlipItem, BetSlipItemDataManager>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
