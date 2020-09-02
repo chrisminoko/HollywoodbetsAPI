@@ -43,7 +43,7 @@ namespace SportAPISever
             services.AddControllers();
             services.AddDbContext<HollywoodbetsDBContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("Devcon")));
-
+            services.AddSwaggerGen();
             services.AddScoped<ISportType, SportTypeDataManager>();
             services.AddScoped<ICountry, CountryDataManager>();
             services.AddScoped<ITournament, TournamentDataManager>();
@@ -58,15 +58,7 @@ namespace SportAPISever
             services.AddScoped<ITournamentBettype, TournamentBettypeDataManager>();
             services.AddScoped<IOddsEvents, OddsEventDataManager>();
             services.AddScoped<IBetSlipItem, BetSlipItemDataManager>();
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo
-                {
-                    Version = "v1",
-                    Title = "ToDo API",
-                    Description = "A simple example ASP.NET Core Web API",
-                });
-            });
+  
 
 
         }
@@ -74,18 +66,17 @@ namespace SportAPISever
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
-            app.UseSwagger();
-
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-            });
 
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseSwagger();
 
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Betting API");
+            });
 
             app.UseRouting();
 

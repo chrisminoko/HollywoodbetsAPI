@@ -18,6 +18,7 @@ namespace SportAPISever.Controllers
             _oddsDetails = oddsDetails;
         }
 
+        [HttpGet]
         public IActionResult GetOdds(int? tournamentID) 
         {
             var results= _oddsDetails.GetOddsDetails(tournamentID);

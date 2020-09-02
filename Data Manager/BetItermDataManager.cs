@@ -65,8 +65,6 @@ namespace SportAPISever.Data_Manager
         {
             try
             {
-
-
                 using (var connection = DbService.sqlConnection())
                 {
                     var result = connection.Query<BetIterm>("Execute GetBetIterm");

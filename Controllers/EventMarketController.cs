@@ -18,6 +18,7 @@ namespace SportAPISever.Controllers
             _eventMarket = eventMarket;
         }
 
+        [HttpGet]
         public IActionResult GetEvent(int ? tournamentID) 
         {
             var results = _eventMarket.GetEventsDetails(tournamentID);
